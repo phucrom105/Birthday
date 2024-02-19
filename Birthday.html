@@ -1,0 +1,112 @@
+<html
+    __fvdsurfcanyoninserted="1"
+    class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    "
+>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- 0. Phần icon của website (thay đổi link đến icon nếu bạn muốn sửa nó) -->
+        <link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16  x16.png">
+<link rel="manifest" href="./ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+        <!-- 1. Đây là phần title của website -->
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="style1.css ">
+        <script>
+            window.open = function () {};
+            window.print = function () {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function () {};
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+        ></script>
+        <meta content="clickberry-extension-here" />
+    </head>
+
+    <body>
+        <link
+            href="https://fonts.googleapis.com/css?family=Wendy+One"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <div class="balloon_container">
+            <div class="balloon balloon1">H</div>
+            <div class="balloon balloon1">A</div>
+            <div class="balloon balloon1">P</div>
+            <div class="balloon balloon1">P</div>
+            <div class="balloon balloon1">Y</div>
+            </div>
+
+           <div class="balloon_container">
+                <div class="balloon balloon2">B</div>
+                <div class="balloon balloon2">I</div>
+                <div class="balloon balloon2">R</div>
+                <div class="balloon balloon2">T</div>
+                <div class="balloon balloon2">H</div>
+           </div>
+           
+            <div class="balloon_container">
+                <div class="balloon balloon3">D</div>
+                <div class="balloon balloon3">A</div>
+                <div class="balloon balloon3">Y</div>
+            </div>
+           <img src="./img/squirrel-1602-256-unscreen.gif" alt="" class="squirrel" width="300" height="300">
+           <img src="./img/sparrow-5687-unscreen.gif" alt="" class="sparrow" ">
+            
+
+            <div class="avatar">
+                <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+                <img src="./avatar/z5146725246420_90924c3a24db77326d576bc2c0550a1b.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+                <!-- 4. Tên của người đó -->
+                <h1 onclick="showMessage()" class="avatar__title">Sông Hương</h1>
+            </div>
+            
+            <!-- 5. Phần nhạc -->
+            <audio id="player" autoplay loop>
+                <source src="baihat.mp" type="audio/mp3">
+            </audio>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            function showMessage() {
+                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+                swal({
+                    title: "Lời nhắn", // Tiêu đề của popup
+                    text: "Sinh nhật zz nha bà dà! Cố gắng đậu NV1 nha :)) ", // Nội dung lời nhắn
+                    button: {
+                        text: "️👻",
+                    },
+                });
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
